@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+</head><body>
+<h1>敦賀空き家一覧</h1>
+<script type="module" src="https://js.sabae.cc/csv-map.js"></script>
+<csv-map src="tsuruga-akiya.csv"></csv-map>
+
+<script type="module" src="https://code4sabae.github.io/js/csv-viewer.js"></script>
+<csv-viewer src="tsuruga-akiya.csv"></csv-viewer>
+
+<style>
+csv-viewer > div {
+  overflow: scroll;
+}
+csv-viewer th, csv-viewer td {
+  white-space: nowrap;
+  border: 1px solid black;
+  padding: .1em .2em;
+}
+table {
+  border-collapse: collapse;
+}
+</style>
+
+<hr>
+<div id='footer'>
+Data: 「<a href=https://tsuruga-akiya.jp/>つるが空き家インフォ - 敦賀市空き家情報サイト 敦賀空き家バンク</a>」をスクレイピングして作成<br>
+App: <a href=https://github.com/code4fukui/tsuruga-akiya>src on GitHub</a><br>
+</div>
+</body>
+</html>
